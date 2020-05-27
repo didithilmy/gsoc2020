@@ -13,6 +13,10 @@ The server extension performs the following.
   - Attached files, uses `GET /dids/{scope}/{name}/files`
   - Data availability, uses `GET /replicas/{scope}/{name}`
   - Data staging status, uses `GET /dids/{scope}/{name}/rules` to get `rule_id`, then uses `GET /rules/{rule_id}`
+- When receiving a request to list files of a DID:
+  - First, it retrieves the cache for a given DID
+    - If not found, it retrieves the files and stores it in the cache with expiration
+  - It returns an array of file DIDs attached to the given DID.
 - When receiving a request to file details:
   - First, it retrieves the cache for a given DID
     - If not found, it does the following:
