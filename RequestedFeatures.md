@@ -35,14 +35,14 @@
 1. Implemented
 2. Implemented as the "Make Available" action in Replica mode. Creates a replication rule to transfer requested files to a mounted RSE.
 3. Implemented, see [CONFIGURATION.md](https://github.com/didithilmy/rucio-jupyterlab/blob/master/CONFIGURATION.md).
-4. Implemented as "Add to Notebook" action in the Explore menu. ![](journal/assets/features-2.png)
+4. Implemented as "Add to Notebook" action in the Explore menu. <br /> ![](journal/assets/features-2.png)
 5. Implemented
 6. Implemented
 7. Implemented, only works for IPython kernels for now.
 8. Implemented
    1. In Python kernel, custom datatypes are used which are inherited from `str` and `list`. When the DID is not available yet, the extension raises an exception with a message "DID has not been made available".
    2. Originally, the idea was that when the exception is raised, the left panel extension shall prompt the user with "Make Available" button.
-   3. The implementation differs from the plan. Instead of prompting the user when an exception is raised, the extension has a "Notebook" tab that shows all of the linked DIDs which includes the "Make Available" button. ![](journal/assets/features-1.png)
+   3. The implementation differs from the plan. Instead of prompting the user when an exception is raised, the extension has a "Notebook" tab that shows all of the linked DIDs which includes the "Make Available" button. <br /> ![](journal/assets/features-1.png)
 9.  Implemented
 10. Implemented
 11. Implemented
@@ -57,8 +57,8 @@
 
 ## Additional Features
 1. Dark theme support
-2. Injection status button in the notebook toolbar ![](journal/assets/06-toolbar-3.png)
+2. Injection status button in the notebook toolbar <br /> ![](journal/assets/06-toolbar-3.png)
 3. Wildcard search selector (Collections, Dataset, Containers, Files, or Everything)
 4. Userpass authentication
-5. File picker on X.509 cert path textfield ![](journal/assets/features-3.png)
-6. Collection DID file list ![](journal/assets/features-4.png)
+5. File picker on X.509 cert path textfield <br /> ![](journal/assets/features-3.png)
+6. Collection DID file list <br /> ![](journal/assets/features-4.png)
