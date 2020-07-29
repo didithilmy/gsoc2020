@@ -63,12 +63,12 @@
 4. Userpass authentication
 5. File picker on X.509 cert path textfield <br /> ![](journal/assets/features-3.png)
 6. Collection DID file list <br /> ![](journal/assets/features-4.png)
+7. Replication rule expiry configuration
 
 
 ### To discuss/to add
-1. Replication rule expiry configuration.
-2. Rucio metadata cache expiry configuration.
-3. "Clear cache" button in Settings.
+1. Rucio metadata cache expiry configuration.
+2. "Clear cache" button in Settings.
 
 
 
