@@ -87,7 +87,7 @@
 
 
 ### Check Status
-1. Tried, worked. <br />![](assets/rootfile-test.png)
+1. Tried, worked. <br /> ![](journal/assets/rootfile-test.png)
 2. Tried using instance provided by Aris. Runs on Docker.
 3. Will be tested by the SWAN team.
 4. Will be tested by the SWAN team.
