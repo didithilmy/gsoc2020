@@ -1,13 +1,14 @@
 # Features Check
 
-## Requests
+## Features
+### Requests
 
-### From Meeting #0: May 25th
+#### From Meeting #0: May 25th
 1. Communicate with Rucio via REST API.
 2. Command Rucio to move a DID to a storage mounted to SWAN.
 3. Fetch configuration from a remote location.
 
-### From Meeting #1: June 8th
+#### From Meeting #1: June 8th
 4. Link DID to notebook via UI, allow users to specify the variable name.
 5. Keep linked DID in the notebook metadata.
 6. Resolve file paths from DID.
@@ -18,20 +19,20 @@
 11. "Make Available" that works for both file and collection DIDs.
 12. Show file size next to the Explore list item.
 
-### From Meeting #2: June 22nd
+#### From Meeting #2: June 22nd
 13. X.509 authentication, users specify path to cert files within the EOS home directory.
 
-### From Meeting #3: July 6th
+#### From Meeting #3: July 6th
 14. Dockerfile with JupyterLab image for quick setup.
 15. Configuration check at startup, show an error message if the extension cannot be activated.
 16. Download mode for unauthenticated storages.
 
-### From Meeting #4: July 20th
+#### From Meeting #4: July 20th
 17. Wildcard search feature, can be enabled from the configuration.
 18. Show acknowledgement when settings are saved.
 
 
-## Implementation Status
+### Implementation Status
 1. Implemented
 2. Implemented as the "Make Available" action in Replica mode. Creates a replication rule to transfer requested files to a mounted RSE.
 3. Implemented, see [CONFIGURATION.md](https://github.com/didithilmy/rucio-jupyterlab/blob/master/CONFIGURATION.md).
@@ -55,10 +56,38 @@
 18. Implemented
 
 
-## Additional Features
+### Additional Features
 1. Dark theme support
 2. Injection status button in the notebook toolbar <br /> ![](journal/assets/06-toolbar-3.png)
 3. Wildcard search selector (Collections, Dataset, Containers, Files, or Everything)
 4. Userpass authentication
 5. File picker on X.509 cert path textfield <br /> ![](journal/assets/features-3.png)
 6. Collection DID file list <br /> ![](journal/assets/features-4.png)
+
+
+### To discuss/to add
+1. Replication rule expiry configuration.
+2. Rucio metadata cache expiry configuration.
+3. "Clear cache" button in Settings.
+
+
+
+## Checks
+### Requests
+
+#### From Meeting #3: July 6th
+1. See if the injected variables work with PyROOT using `.root` files.
+
+#### From Meeting #4: July 20th
+2. See if the extension is installable on CERN OpenStack.
+
+#### From Meeting #5: July 27th
+3. See if the extension can be integrated with EOS.
+4. See if the extension can be installed on SWAN.
+
+
+### Check Status
+1. Tried, worked. <br />![](assets/rootfile-test.png)
+2. Tried using instance provided by Aris. Runs on Docker.
+3. Will be tested by the SWAN team.
+4. Will be tested by the SWAN team.
