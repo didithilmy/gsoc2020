@@ -26,8 +26,19 @@ $ rucio-admin config set --section root-proxy-internal --option SITENAME --value
 To get the list of replicas with the caches prepended to the PFNs, the client must be in a different site.
 Hence, the client must be configured with a site name. To do that:
 
+### Using Rucio client CLI
+Set an environment variable `SITE_NAME=sitename`.
+```bash
+$ export SITE_NAME=sitename
+$ rucio list-file-replicas scope:name
+```
+
 #### Using Rucio client's `list_replicas` method
-Set an environment variable `SITE_NAME=sitename`, or specify the `client_location` parameter with a dict containing `site` key: `{'site': 'sitename'}`
+Specify the `client_location` parameter with a dict containing `site` key.
+```python
+dids = [{'scope': 'scope', 'name': 'name'}]
+list_replicas(dids=dids, client_location={'site': 'sitename'})
+```
 
 #### Using `/replicas/list` REST API
 Specify the `client_location` with a dict containing `site` key in the JSON request body.
