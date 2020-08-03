@@ -26,7 +26,7 @@ $ rucio-admin config set --section root-proxy-internal --option SITENAME --value
 To get the list of replicas with the caches prepended to the PFNs, the client must be in a different site.
 Hence, the client must be configured with a site name. To do that:
 
-### Using Rucio client CLI
+#### Using Rucio client CLI
 Set an environment variable `SITE_NAME=sitename`.
 ```bash
 $ export SITE_NAME=sitename
