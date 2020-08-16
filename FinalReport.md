@@ -3,7 +3,7 @@ Google Summer of Code 2020 with CERN-HSF by Muhammad Aditya Hilmy <<mhilmy@hey.c
 
 ## Introduction
 ### Project Brief
-This project aims to build a JupyterLab extension installable in SWAN and vanilla JupyterLab with the capability to integrate with CERN's exascale data management platform [Rucio](https://github.com/rucio/rucio). The extension abstracts the complex process of making data available for scientific analyses into a simple and intuitive one. It takes care of finding where the data is located, how to fetch it, downloads it into a folder, and making the file paths available from the notebook kernel.
+This project aims to build a JupyterLab extension installable in SWAN and vanilla JupyterLab with the capability to integrate with CERN's exascale data management platform [Rucio](https://github.com/rucio/rucio). The extension abstracts the complex process of making data available for scientific analyses into a simple and intuitive one. It takes care of finding where the data is located, how to fetch it, downloads it into a folder, and making the file paths available in the notebook kernel as a Python variable.
 
 Using this extension, the process of making the data available is as simple as online shopping. Simply find the data you're looking for, click on "Make Available," and finally click on "Add to Notebook" to attach the data to a notebook.
 
@@ -38,12 +38,25 @@ The extension's source code lives in [didithilmy/rucio-jupyterlab](https://githu
 ![](screen1.gif)
 
 ### Issues and Pull Requests to Rucio
-A couple of issues and pull requests to Rucio has been created and merged.
+A couple of issues and pull requests to Rucio have been created and merged.
 1. Issue [#3630](https://github.com/rucio/rucio/issues/3630)
 2. Issue [#3871](https://github.com/rucio/rucio/issues/3871)
 3. Issue [#3873](https://github.com/rucio/rucio/issues/3873)
 4. Pull Request [#3631](https://github.com/rucio/rucio/pull/3631) and [#3632](https://github.com/rucio/rucio/pull/3632)
 5. Pull Request [#3872](https://github.com/rucio/rucio/pull/3872)
+
+
+## Future Developments
+There are still exciting stuff that can be developed in the future.
+1. More Kernel compatibility
+   1. Octave, R, ROOT C++
+2. More authentication methods
+   1. OAuth/OpenID Connect
+3. Share notebooks across JupyterLab installations
+   1. Allows any JupyterLab instance to connect to publicly-accessible Rucio installations and their RSEs
+   2. Fetches Rucio configuration on-the-fly, URL known from notebook metadata
+4. (If you have other ideas, please let me know)
+
 
 
 ## Challenges and Takeaways
