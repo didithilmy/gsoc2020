@@ -21,14 +21,14 @@ The extension's source code lives in [didithilmy/rucio-jupyterlab](https://githu
 1. Browse Rucio data from the Lab sidebar
 2. Replicate data with just one click
 3. Resolves file path automagically
-    1. Inject path to notebook as a variable
-4. Supports two methods of authentication (currently):
+4. Inject path to notebook as a variable
+5. Supports two methods of authentication (currently):
     1. Username & Password
     2. X.509 User Certificate
-5. Supports two modes of operation:
+6. Supports two modes of operation:
     1. Replica mode: uses network-attached storage as a Rucio Storage Element (RSE), utilizes Rucio’s file transfer capability.
     2. Download mode: downloads data directly to the user’s directory using Rucio clients.
-6. Remote configuration
+7. Remote configuration
 
 
 #### Screenshots
