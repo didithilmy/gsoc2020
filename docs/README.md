@@ -22,9 +22,10 @@ The extension's source code lives in [didithilmy/rucio-jupyterlab](https://githu
 2. Replicate data with just one click
 3. Resolves file path automagically
 4. Inject path to notebook as a variable
-5. Supports two methods of authentication (currently):
+5. Supports three methods of authentication (currently):
     1. Username & Password
     2. X.509 User Certificate
+    3. X.509 Proxy Certificate
 6. Supports two modes of operation:
     1. Replica mode: uses network-attached storage as a Rucio Storage Element (RSE), utilizes Rucio’s file transfer capability.
     2. Download mode: downloads data directly to the user’s directory using Rucio clients.
