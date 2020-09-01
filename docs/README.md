@@ -15,7 +15,7 @@ Additionally, the additional commands used to procure the data may clutter the n
 
 ## Work Results
 ### Rucio JupyterLab Extension
-The extension's source code lives in [didithilmy/rucio-jupyterlab](https://github.com/didithilmy/rucio-jupyterlab). Documentations on how to install and use the package is available on the repo README.
+The extension's source code lives in [rucio/jupyterlab](https://github.com/rucio/jupyterlab). Documentations on how to install and use the package is available on the repo README.
 
 #### Features
 1. Browse Rucio data from the Lab sidebar
