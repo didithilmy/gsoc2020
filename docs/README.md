@@ -63,3 +63,5 @@ There are still exciting stuff that can be developed in the future.
 This is overall a fun and challenging project to do. I think the biggest challenge would be to familiarize myself with tools that are used almost exclusively in the scientific community. Tools like Rucio, XRootD, EOS are everything but familiar to me. I even had to delve into the world of Grid Computing just to implement a feature (which in most part is still a mystery to me).
 
 For the details of the techical challenges that I had to face, and a description of how I dealt with it, take a look at my [project journal](https://github.com/didithilmy/gsoc2020/tree/master/journal).
+
+I have also written a blog post about my story of participating in the GSoC 2020 program for three months. Take a look at it in [this link](https://www.linkedin.com/pulse/helping-high-energy-physics-one-commit-time-gsoc-2020-hilmy).
